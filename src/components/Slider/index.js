@@ -1,27 +1,16 @@
 import React, { useState } from 'react';
 
 import { Container, Dot, DotContainer, ImageContainer, NavButton, NavDiv } from './styles';
-import banner1 from '../../assets/images/banner1.png';
-import banner2 from '../../assets/images/banner2.png';
-
-
-const images = [
-  {
-    image: banner1,
-  },
-  {
-    image: banner2,
-  }
-]
+import { images } from './images';
 
 export default function Slider() {
   const [imageIndex, setImageIndex] = useState(0);
-
+ 
   const next = () => {
     setImageIndex(state => state += 1);
     if (imageIndex === images.length - 1) setImageIndex(0);
   };
-
+  
   const prev = () => {
     setImageIndex(state => state -= 1);
     if (imageIndex === 0) setImageIndex(images.length - 1);

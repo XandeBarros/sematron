@@ -30,6 +30,7 @@ export default function Header() {
             return(
               <SA
                 key={index}
+                href={item.url}
                 active={active[index]}
               >
                 {item.title}

@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     title: 'Sobre nós',
-    url: '#',
+    url: '#About',
   },
   {
     title: 'Histórico',
