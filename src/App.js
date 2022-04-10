@@ -2,13 +2,15 @@ import React from "react";
 
 import GlobalStyle from './styles/global';
 
+import Header from './components/Header';
+import Slider from "./components/Slider";
+
 export default function App() {
   return(
     <>
-      <GlobalStyle/>
-      <h1>
-        Um novo começo!
-      </h1>
+      <GlobalStyle />
+      <Header />
+      <Slider />
     </>
   );
 }
