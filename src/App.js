@@ -7,6 +7,7 @@ import Slider from './components/Slider';
 import About from './components/About';
 import Numbers from './components/Numbers';
 import Edition from './components/Editions';
+import Contact from './components/Contact';
 
 import { images } from './components/Slider/images';
 import { profImages } from './components/Editions/profImages';
@@ -20,6 +21,7 @@ export default function App() {
       <About />
       <Numbers />
       <Edition images={profImages}/>
+      <Contact />
     </>
   );
 }

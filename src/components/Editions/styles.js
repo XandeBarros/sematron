@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  height: 35rem;
+  height: auto;
 
   margin: 0 auto;
 
@@ -67,7 +67,7 @@ export const Infos = styled.div`
 export const DepBox = styled.div`
   background-color: rgba(3, 3, 3, 0.2);
   width: 100%;
-  min-height: 32.5rem;
+  min-height: 25rem;
 
   display: flex;
   align-items: center;
