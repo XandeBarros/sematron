@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 import { Container, Dot, DotContainer, ImageContainer, NavButton, NavDiv } from './styles';
-import { images } from './images';
 
-export default function Slider() {
+export default function Slider({ images }) {
   const [imageIndex, setImageIndex] = useState(0);
  
   const next = () => {

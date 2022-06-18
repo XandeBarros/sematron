@@ -6,15 +6,20 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import About from './components/About';
 import Numbers from './components/Numbers';
+import Edition from './components/Editions';
+
+import { images } from './components/Slider/images';
+import { profImages } from './components/Editions/profImages';
 
 export default function App() {
   return(
     <>
       <GlobalStyle />
       <Header />
-      <Slider />
+      <Slider images={images}/>
       <About />
       <Numbers />
+      <Edition images={profImages}/>
     </>
   );
 }
